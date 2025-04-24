@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EA4A2292-03DF-4A56-B449-42BD40C37C36}</ProjectGuid>
+    <ProjectGuid>{627CE652-7D0C-4538-9513-4300A861AF8F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>FitnessAppBLTests</RootNamespace>
-    <AssemblyName>FitnessAppBLTests</AssemblyName>
+    <RootNamespace>FitnessAppBLTests1</RootNamespace>
+    <AssemblyName>FitnessAppBLTests1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -51,7 +51,6 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Controller\EatingControllerTests.cs" />
-    <Compile Include="Controller\UserControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
