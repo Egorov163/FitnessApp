@@ -1,4 +1,8 @@
 ﻿using System;
+using System.Globalization;
+using System.Resources;
+using System.Runtime.ConstrainedExecution;
+using Fitness.CMD.Languages;
 using FitnessAppBL.Controller;
 using FitnessAppBL.Model;
 
@@ -8,7 +12,10 @@ namespace Fitness.CMD
     {
         static void Main(string[] args)
         {
-            Console.WriteLine($"Вас приветствует приложение Fitness");
+            var culture = CultureInfo.CreateSpecificCulture("ru-ru");
+            var resourceManager = new ResourceManager("Fitness.CMD.Languages.Messages", typeof(Program).Assembly);
+
+            Console.WriteLine(resourceManager.GetString("Hello", culture));
 
             Console.WriteLine($"Введите имя пользователя: ");
             var name = Console.ReadLine();
